@@ -38,19 +38,19 @@ main div h3{
   justify-content: center;
 }
 .Cards img{
-  width: 200px;
-  height: 200px;
-  border-radius:10px;
+  width: 240px;
+  height: 240px;
+  border-radius: 25px;
   border: 2px solid var(--card-border);
 }
 .Card{
-  width: 270px;
-  height: 400px;
+  width: 280px;
+  height: 460px;
   background-color: var(--secondaryColor);
   padding: 15px;
   margin: 0 20px;
-  border: 5px solid var(--card-border);
-  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,13 +59,14 @@ main div h3{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 2px;
 }
 .id {
   background-color: var(--fourthColor);
-  border: 2px solid var(--card-border); 
-  border-radius: 10px;
+  border: 1px solid var(--card-border); 
+  border-radius: 5px;
   padding: 2px 8px;
-  font-size: 15px;
+  font-size: 16px;
   margin-left: 8px;
 }
 .Card h2{
@@ -74,18 +75,23 @@ main div h3{
   width: 100%;
 }
 .Card p {
-  font-size: 13px;
+  font-size: 15px;
   text-align: left;
   width: 100%;
 }
 .icon-small{
   font-size: 12px;
+  text-align: left;
+  width: 100%;
 }
 .Card button{
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  margin-bottom: 15px;
+  width: 240px;
+  height: 40px;
+  background-color: var(--shadow-purple);
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
