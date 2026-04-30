@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #0a0b1e; /* Fondo negro-azulado profundo */
+  --secondaryColor: #161a30; /* Fondo de las tarjetas y contenedores */
+  --thirdColor: color: #7b61ff; /* Botones principales y hover */
+  --fourthColor: #5a45d1; /* Sombras y bordes de botones */
+  --fifthColor: #ffffff; /* Blanco puro para títulos */
+  --sixthColor: #b0b3c1; /* Gris claro para párrafos y descripciones */
+  --seventhColor: #c482ff; /* Púrpura suave para palabras clave (IRREPETIBLES) */
+  --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
+  --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
+}
+
