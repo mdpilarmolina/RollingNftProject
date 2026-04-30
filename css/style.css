@@ -41,14 +41,52 @@ main div h3{
   width: 200px;
   height: 200px;
   border-radius:10px;
+  border: 2px solid var(--card-border);
 }
 .Card{
+  width: 270px;
+  height: 400px;
+  background-color: var(--secondaryColor);
+  padding: 15px;
   margin: 0 20px;
   border: 5px solid var(--card-border);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.id {
+  background-color: var(--fourthColor);
+  border: 2px solid var(--card-border); 
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 15px;
+  margin-left: 8px;
 }
 .Card h2{
   font-size: 20px;
+  text-align: left;
+  width: 100%;
+}
+.Card p {
+  font-size: 13px;
+  text-align: left;
+  width: 100%;
+}
+.icon-small{
+  font-size: 12px;
+}
+.Card button{
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
