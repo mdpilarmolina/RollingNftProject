@@ -15,4 +15,19 @@
   --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
   --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
 }
-
+main div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main div h1{
+  font-size: 15px;
+  color: var(--seventhColor)
+}
+main div h2{
+  color: var(--fifthColor);
+}
+main div h3{
+  font-size: 15px;
+  color: var(--sixthColor);
+}
