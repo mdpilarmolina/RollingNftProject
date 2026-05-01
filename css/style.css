@@ -5,13 +5,13 @@
 }
 
 :root {
-  --primaryColor: #0a0b1e; /* Fondo negro-azulado profundo */
+  --primaryColor: #0B0F1A; /* Fondo negro-azulado profundo */
   --secondaryColor: #161a30; /* Fondo de las tarjetas y contenedores */
-  --thirdColor: #a855f7; /* Botones principales y hover */
-  --fourthColor: #5a45d1; /* Sombras y bordes de botones */
+  --thirdColor: #8B5CF6; /* Botones principales y hover */
+  --fourthColor: #7C3AED; /* Sombras y bordes de botones */
   --fifthColor: #ffffff; /* Blanco puro para títulos */
-  --sixthColor: #b0b3c1; /* Gris claro para párrafos y descripciones */
-  --seventhColor: #c482ff; /* Púrpura suave para palabras clave (IRREPETIBLES) */
+  --sixthColor: #9CA3AF; /* Gris claro para párrafos y descripciones */
+  --seventhColor:#A78BFA; /* Púrpura suave para palabras clave (IRREPETIBLES) */
   --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
   --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
 }
@@ -66,4 +66,42 @@ body {
     background-color: var(--shadow-purple); 
     border-color: var(--thirdColor);
     color: var(--thirdColor);
+}
+
+/*CAROUSEL*/
+.carousel-item {
+  position: relative; 
+}
+
+.btn-dino-flotante {
+  position: absolute;
+  bottom: 28%; 
+  left: 5%;
+  background-color: var(--fourthColor); 
+  color: var(--fifthColor);
+  padding: 12px 24px; 
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: sans-serif; 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-dino-flotante:hover {
+  background-color: var(--fourthColor);
+}
+
+@media (max-width: 768px) {
+  .btn-dino-flotante {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    bottom: 20%;
+    left: 5%;
+  }
 }
