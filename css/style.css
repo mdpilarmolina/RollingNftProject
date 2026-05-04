@@ -5,100 +5,92 @@
 }
 
 :root {
-  --primaryColor: #0B0F1A; /* Fondo negro-azulado profundo */
-  --secondaryColor: #161a30; /* Fondo de las tarjetas y contenedores */
-  --thirdColor: #8B5CF6; /* Botones principales y hover */
-  --fourthColor: #7C3AED; /* Sombras y bordes de botones */
-  --fifthColor: #ffffff; /* Blanco puro para títulos */
-  --sixthColor: #9CA3AF; /* Gris claro para párrafos y descripciones */
-  --seventhColor:#A78BFA; /* Púrpura suave para palabras clave (IRREPETIBLES) */
-  --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
-  --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
+  --primaryColor: #0b0f1a; 
+  --secondaryColor: #161a30; 
+  --thirdColor: #8b5cf6; 
+  --fourthColor: #7c3aed; 
+  --fifthColor: #ffffff; 
+  --sixthColor: #9ca3af; 
+  --seventhColor: #a78bfa; 
+  --card-border: #252a41; 
+  --shadow-purple: rgba(123,97,255,0.4);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/*NAVAR*/
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--secondaryColor); 
-    color: var(--fifthColor);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondaryColor);
+  color: var(--fifthColor);
 }
-
 
 .navbar {
-    background-color: var(--primaryColor);
+  background-color: var(--primaryColor);
 }
 
 .navbar-brand {
-    font-weight: 700; 
-    color: var(--fifthColor);
+  font-weight: 700;
+  color: var(--fifthColor);
 }
 
 .navbar-nav .nav-link {
-    font-weight: 500;
-    color: var(--fifthColor);
-    margin: 0 12px;
-    font-size: 0.95rem;
-    
+  font-weight: 500;
+  color: var(--fifthColor);
+  margin: 0 12px;
+  font-size: 0.95rem;
 }
 
 .nav-underline .nav-link.active {
-    color: var(--thirdColor); 
-    border-bottom: 2px solid var(--thirdColor);
+  color: var(--thirdColor);
+  border-bottom: 2px solid var(--thirdColor);
 }
 
-
 .btn-wallet {
-    border: 1px solid var(--thirdColor);
-    color: var(--thirdColor);
-    background-color: transparent;
-    padding: 10px 24px;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    margin-right: 30px;
+  border: 1px solid var(--thirdColor);
+  color: var(--thirdColor);
+  background-color: transparent;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-right: 30px;
 }
 
 .btn-wallet:hover {
-    background-color: var(--shadow-purple); 
-    border-color: var(--thirdColor);
-    color: var(--thirdColor);
+  background-color: var(--shadow-purple);
+  border-color: var(--thirdColor);
+  color: var(--thirdColor);
 }
 
-/*CAROUSEL*/
-
-.container{
-
+.container {
 }
 
 .carousel-item {
   position: relative;
 }
 
-.carousel-inner{
+.carousel-inner {
   border-radius: 3%;
 }
 
 .btn-dino-flotante {
   position: absolute;
-  bottom: 28%; 
+  bottom: 28%;
   left: 5%;
-  background-color: var(--fourthColor); 
+  background-color: var(--fourthColor);
   color: var(--fifthColor);
-  padding: 12px 24px; 
+  padding: 12px 24px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  font-family: sans-serif; 
+  font-family: sans-serif;
   display: flex;
   align-items: center;
   gap: 8px;
   z-index: 20;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   border: none;
 }
 
