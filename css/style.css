@@ -118,6 +118,10 @@ main div h3{
   .banner img{
     display: none;
   }
+  .Cards{
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media all and (min-width: 577px) and(max-width: 768px){
   .banner img{
