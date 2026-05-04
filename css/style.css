@@ -17,19 +17,19 @@
   --color_transparente_para_los_id: rgba(90, 69, 209, 0.3);
   --color_transparente_para_las_cards: rgba(22, 26, 48, 0.5);
 }
-main div{
+main section article{
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-main div h1{
+main section article h1{
   font-size: 15px;
   color: var(--seventhColor)
 }
-main div h2{
+main section article h2{
   color: var(--fifthColor);
 }
-main div h3{
+main section article h3{
   font-size: 15px;
   color: var(--sixthColor);
 }
