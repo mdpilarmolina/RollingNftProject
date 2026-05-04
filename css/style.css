@@ -69,8 +69,17 @@ body {
 }
 
 /*CAROUSEL*/
+
+.container{
+
+}
+
 .carousel-item {
-  position: relative; 
+  position: relative;
+}
+
+.carousel-inner{
+  border-radius: 3%;
 }
 
 .btn-dino-flotante {
@@ -94,7 +103,7 @@ body {
 }
 
 .btn-dino-flotante:hover {
-  background-color: var(--fourthColor);
+  background-color: var(--thirdColor);
 }
 
 @media (max-width: 768px) {
