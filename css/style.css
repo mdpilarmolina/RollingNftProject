@@ -5,15 +5,15 @@
 }
 
 :root {
-  --primaryColor: #0a0b1e; /* Fondo negro-azulado profundo */
-  --secondaryColor: #161a30; /* Fondo de las tarjetas y contenedores */
-  --thirdColor:  #7b61ff; /* Botones principales y hover */
-  --fourthColor: #5a45d1; /* Sombras y bordes de botones */
-  --fifthColor: #ffffff; /* Blanco puro para títulos */
-  --sixthColor: #b0b3c1; /* Gris claro para párrafos y descripciones */
-  --seventhColor: #c482ff; /* Púrpura suave para palabras clave (IRREPETIBLES) */
-  --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
-  --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
+  --primaryColor: #0a0b1e;
+  --secondaryColor: #161a30;
+  --thirdColor:  #7b61ff;
+  --fourthColor: #5a45d1;
+  --fifthColor: #ffffff;
+  --sixthColor: #b0b3c1;
+  --seventhColor: #c482ff;
+  --card-border: #252a41;
+  --shadow-purple: rgba(123,97,255,0.4); 
   --color_transparente_para_los_id: rgba(90, 69, 209, 0.3);
   --color_transparente_para_las_cards: rgba(22, 26, 48, 0.5);
 }
