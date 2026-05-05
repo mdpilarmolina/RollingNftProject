@@ -106,3 +106,42 @@ body {
     left: 5%;
   }
 }
+
+.container-foro{
+  background-color: var(--card-border);
+  border-radius: 25px;
+  padding: 2px;
+  box-shadow: 0 0 20px rgba(88, 55, 122, 0.5);
+  border: 1px solid #4a336e;
+  width: 900px;
+  max-width: 95%;
+}
+
+.container-content{
+  background-color: var(--card-border);
+  border-radius: 23px;
+  padding: 20px 30px;
+}
+
+.header-foro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tittle-section{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tittle-section h2{
+  font-size: 14px;
+  color:var(--seventhColor);
+  margin: 0;
+}
+
+.tittle-section h2 span {
+  color: var(--fifthColor);
+}
