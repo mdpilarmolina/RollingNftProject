@@ -5,14 +5,104 @@
 }
 
 :root {
-  --primaryColor: #0a0b1e; /* Fondo negro-azulado profundo */
-  --secondaryColor: #161a30; /* Fondo de las tarjetas y contenedores */
-  --thirdColor: color: #7b61ff; /* Botones principales y hover */
-  --fourthColor: #5a45d1; /* Sombras y bordes de botones */
-  --fifthColor: #ffffff; /* Blanco puro para títulos */
-  --sixthColor: #b0b3c1; /* Gris claro para párrafos y descripciones */
-  --seventhColor: #c482ff; /* Púrpura suave para palabras clave (IRREPETIBLES) */
-  --card-border: #252a41; /* Bordes sutiles de las tarjetas de NFT */
-  --shadow-purple: rgba(123,97,255,0.4); /* Resplandor para botones o efectos */
+  --primaryColor: #0b0f1a; 
+  --secondaryColor: #161a30; 
+  --thirdColor: #8b5cf6; 
+  --fourthColor: #7c3aed; 
+  --fifthColor: #ffffff; 
+  --sixthColor: #9ca3af; 
+  --seventhColor: #a78bfa; 
+  --card-border: #252a41; 
+  --shadow-purple: rgba(123,97,255,0.4);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondaryColor);
+  color: var(--fifthColor);
+}
+
+.navbar {
+  background-color: var(--primaryColor);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--fifthColor);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: var(--fifthColor);
+  margin: 0 12px;
+  font-size: 0.95rem;
+}
+
+.nav-underline .nav-link.active {
+  color: var(--thirdColor);
+  border-bottom: 2px solid var(--thirdColor);
+}
+
+.btn-wallet {
+  border: 1px solid var(--thirdColor);
+  color: var(--thirdColor);
+  background-color: transparent;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-right: 30px;
+}
+
+.btn-wallet:hover {
+  background-color: var(--shadow-purple);
+  border-color: var(--thirdColor);
+  color: var(--thirdColor);
+}
+
+.container {
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-inner {
+  border-radius: 3%;
+}
+
+.btn-dino-flotante {
+  position: absolute;
+  bottom: 28%;
+  left: 5%;
+  background-color: var(--fourthColor);
+  color: var(--fifthColor);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 20;
+  transition: background-color 0.5s ease;
+  border: none;
+}
+
+.btn-dino-flotante:hover {
+  background-color: var(--thirdColor);
+}
+
+@media (max-width: 768px) {
+  .btn-dino-flotante {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    bottom: 20%;
+    left: 5%;
+  }
+}
