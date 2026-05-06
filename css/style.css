@@ -95,6 +95,14 @@ body {
 .btn-dino-flotante:hover {
   background-color: var(--thirdColor);
 }
+.Banner img{
+  width: 80%;
+  height: 250px;
+  display: flex;
+  margin: auto;
+  border: 1px solid var(--shadow-purple);
+  border-radius: 25px;
+}
 
 @media (max-width: 768px) {
   .btn-dino-flotante {
@@ -102,6 +110,21 @@ body {
     padding: 6px 12px;
     bottom: 20%;
     left: 5%;
+  }
+}
+@media all and (max-width: 577px){
+  .Banner img{
+    display: none;
+  }
+}
+@media all and (min-width: 577px) and(max-width: 768px){
+  .Banner img{
+    display: none;
+  }
+}
+@media all and (min-width:768px) and(max-width: 992px){
+  .Banner img{
+    display: none;
   }
 }
 main section article{
