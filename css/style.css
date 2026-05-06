@@ -5,15 +5,15 @@
 }
 
 :root {
-  --primaryColor: #0b0f1a; 
-  --secondaryColor: #161a30; 
-  --thirdColor: #8b5cf6; 
-  --fourthColor: #7c3aed; 
-  --fifthColor: #ffffff; 
-  --sixthColor: #9ca3af; 
-  --seventhColor: #a78bfa; 
-  --card-border: #252a41; 
-  --shadow-purple: rgba(123,97,255,0.4);
+  --primaryColor: #0b0f1a;
+  --secondaryColor: #161a30;
+  --thirdColor: #8b5cf6;
+  --fourthColor: #7c3aed;
+  --fifthColor: #ffffff;
+  --sixthColor: #9ca3af;
+  --seventhColor: #a78bfa;
+  --card-border: #252a41;
+  --shadow-purple: rgba(123, 97, 255, 0.4);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -107,7 +107,13 @@ body {
   }
 }
 
-.container-foro{
+.foro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-foro {
   background-color: var(--card-border);
   border-radius: 25px;
   padding: 2px;
@@ -117,28 +123,28 @@ body {
   max-width: 95%;
 }
 
-.container-content{
+.container-content {
   background-color: var(--card-border);
   border-radius: 23px;
   padding: 20px 30px;
 }
 
-.header-foro{
+.header-foro {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.tittle-section{
+.tittle-section {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.tittle-section h2{
+.tittle-section h2 {
   font-size: 14px;
-  color:var(--seventhColor);
+  color: var(--seventhColor);
   margin: 0;
 }
 
@@ -146,20 +152,21 @@ body {
   color: var(--fifthColor);
 }
 
-.social-icons{
+.social-icons {
   display: flex;
-  gap:15px;
-  color:var(--fourthColor);
+  gap: 15px;
+  color: var(--fourthColor);
   font-size: 18px;
+  cursor: pointer;
 }
 
-.avatar{
+.avatar {
   width: 24px;
   height: 24px;
   border-radius: 50%;
 }
 
-.comment-item{
+.comment-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,8 +174,77 @@ body {
   font-size: 14px;
 }
 
-.user-info{
+.user-info {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.comment-time {
+  display: flex;
+  gap: 20px;
+  color: var(--fifthColor);
+  min-width: 150px;
+  justify-content: flex-end;
+}
+
+.form-section {
+  margin-top: 25px;
+}
+
+.fila-form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.fila-form label {
+  font-size: 13px;
+  color: var(--fifthColor);
+}
+
+input,
+textarea {
+  background: var(--secondaryColor);
+  border: 1px solid var(--fifthColor);
+  border-radius: 8px;
+  color: var(--fifthColor);
+  padding: 12px 12px;
+}
+
+.input {
+  width: 200%;
+}
+
+.nombre-usuario {
+  color: var(--fourthColor);
+  padding-bottom: 10px;
+  min-width: 80px;
+}
+
+.textarea {
+  flex-grow: 1;
+  height: 45px;
+}
+
+.btn-publish {
+  background: var(--fourthColor);
+  color: var(--fifthColor);
+  border: 1px solid var(--fourthColor);
+  padding: 12px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-publish:hover {
+  background: var(--fourthColor);
+  box-shadow: 0 0 10px rgba(123, 97, 255, 0.4);
+}
+
+.main-input{
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
 }
