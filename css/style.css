@@ -62,10 +62,6 @@ body {
   border-color: var(--thirdColor);
   color: var(--thirdColor);
 }
-
-.container {
-}
-
 .carousel-item {
   position: relative;
 }
