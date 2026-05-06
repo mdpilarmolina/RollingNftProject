@@ -14,6 +14,8 @@
   --seventhColor: #a78bfa;
   --card-border: #252a41;
   --shadow-purple: rgba(123, 97, 255, 0.4);
+  --color_transparente_para_los_id: rgba(90, 69, 209, 0.3);
+  --color_transparente_para_las_cards: rgba(22, 26, 48, 0.5);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
@@ -101,6 +103,96 @@ body {
     bottom: 20%;
     left: 5%;
   }
+}
+main section article{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main section article h1{
+  font-size: 15px;
+  color: var(--seventhColor)
+}
+main section article h2{
+  color: var(--fifthColor);
+}
+main section article h3{
+  font-size: 15px;
+  color: var(--sixthColor);
+}
+.Cards{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Cards img{
+  width: 240px;
+  height: 240px;
+  border-radius: 25px;
+  border: 2px solid var(--card-border);
+}
+.Card{
+  width: 280px;
+  height: 460px;
+  background-color: var(--color_transparente_para_las_cards);
+  padding: 15px;
+  margin: 0 20px;
+  border: 1px solid var(--card-border);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.Card:hover{
+  transform: scale(1.05);
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2px;
+}
+.id {
+  background-color: var(--color_transparente_para_los_id);
+  border: 1px solid var(--fourthColor); 
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+.id:hover{
+  transform: scale(1.06);
+}
+.Card h2{
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+}
+.Card p {
+  font-size: 15px;
+  text-align: left;
+  width: 100%;
+}
+.icon-small{
+  font-size: 12px;
+  text-align: left;
+  width: 100%;
+}
+.Card button{
+  width: 240px;
+  height: 40px;
+  background-color: var(--fourthColor);
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foro {
