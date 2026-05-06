@@ -160,6 +160,15 @@ body {
   cursor: pointer;
 }
 
+.social-icons svg {
+  transition: transform 0.2s ease;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
 .avatar {
   width: 24px;
   height: 24px;
@@ -188,10 +197,6 @@ body {
   justify-content: flex-end;
 }
 
-.form-section {
-  margin-top: 25px;
-}
-
 .fila-form {
   display: flex;
   align-items: center;
@@ -213,19 +218,15 @@ textarea {
   padding: 12px 12px;
 }
 
-.input {
-  width: 200%;
-}
-
 .nombre-usuario {
   color: var(--fourthColor);
   padding-bottom: 10px;
   min-width: 80px;
 }
 
-.textarea {
-  flex-grow: 1;
-  height: 45px;
+.mention {
+  color: var(--fourthColor);
+  font-weight: 600;
 }
 
 .btn-publish {
@@ -235,16 +236,30 @@ textarea {
   padding: 12px 15px;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .btn-publish:hover {
   background: var(--fourthColor);
   box-shadow: 0 0 10px rgba(123, 97, 255, 0.4);
+  transition: transform 0.2s ease;
+  transform: scale(1.05);
 }
 
 .main-input{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 15px;
+}
+
+.main-input textarea {
+  flex-grow: 1;
+  height: 45px;
+  resize: none;
+  padding: 12px;
+  background: var(--secondaryColor);
+  border: 1px solid var(--fifthColor);
+  border-radius: 8px;
+  color: var(--fifthColor);
+  font-size: 14px;
+  line-height: 1;
 }
