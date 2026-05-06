@@ -399,3 +399,140 @@ footer {
     gap: 32px;
   }
 }
+#contacto {
+  background-color: var(--primaryColor);
+  padding: 80px 60px;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contacto-info {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacto-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--seventhColor);
+}
+
+.contacto-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--fifthColor);
+}
+
+.contacto-descripcion {
+  font-size: 0.88rem;
+  color: var(--sixthColor);
+  line-height: 1.6;
+}
+
+.contacto-redes {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.contacto-redes a {
+  color: var(--sixthColor);
+  transition: color 0.2s;
+}
+
+.contacto-redes a:hover {
+  color: var(--seventhColor);
+}
+
+.contacto-redes a svg {
+  width: 20px;
+  height: 20px;
+}
+.contacto-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 280px;
+}
+
+.form-fila {
+  display: flex;
+  gap: 16px;
+}
+
+.form-fila input {
+  flex: 1;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--fifthColor);
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: var(--sixthColor);
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: var(--seventhColor);
+}
+
+.contacto-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contacto-form button {
+  align-self: flex-start;
+  background-color: var(--thirdColor);
+  color: var(--fifthColor);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.contacto-form button:hover {
+  background-color: var(--fourthColor);
+  box-shadow: 0 0 12px var(--shadow-purple);
+}
+
+@media (max-width: 640px) {
+  #contacto {
+    padding: 60px 24px;
+  }
+  .contacto-container {
+    flex-direction: column;
+  }
+  .form-fila {
+    flex-direction: column;
+  }
+  .contacto-form button {
+    align-self: stretch;
+    text-align: center;
+  }
+}
