@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +9,7 @@
 :root {
   --primaryColor: #0b0f1a;
   --secondaryColor: #161a30;
-  --thirdColor: #8b5cf6;
+  --thirdColor: #00f5d4;
   --fourthColor: #7c3aed;
   --fifthColor: #ffffff;
   --sixthColor: #9ca3af;
@@ -16,23 +18,27 @@
   --shadow-purple: rgba(123, 97, 255, 0.4);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 html {
   scroll-behavior: smooth; 
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--secondaryColor);
+  
+  /* Gradiente lineal en diagonal de 3 colores súper vivos pero oscuros */
+  background-image: linear-gradient(
+    135deg, 
+    #090d22 0%,    /* Azul Cósmico profundo en la esquina superior */
+    #1b1133 50%,   /* Violeta Eléctrico en el centro (combina con tus botones) */
+    #290e25 100%   /* Magenta de Neón oscuro abajo a la derecha */
+  ) !important; 
+  background-attachment: fixed; /* Mantiene el juego de luces fijo mientras hacés scroll */
   color: var(--fifthColor);
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-
-.navbar {
-  background-color: var(--primaryColor);
+.navbar-expand-lg{
+  background-color: #0b0f1ac3;
 }
-
 .navbar-brand {
   font-weight: 700;
   color: var(--fifthColor);
@@ -277,6 +283,7 @@ main section article h3 {
 .social-icons svg:hover {
   transform: scale(1.2);
   transition: transform 0.2s ease;
+  color: var(--thirdColor);
 }
 
 .avatar {
@@ -354,7 +361,7 @@ textarea {
 }
 
 .btn-publish:hover {
-  background: var(--fourthColor);
+  background: var(--thirdColor);
   box-shadow: 0 0 10px rgba(123, 97, 255, 0.4);
   transition: transform 0.2s ease;
   transform: scale(1.05);
@@ -446,12 +453,12 @@ textarea {
 }
 
 .contacto-redes a {
-  color: var(--sixthColor);
+  color: var(--fourthColor);
   transition: color 0.2s;
 }
 
 .contacto-redes a:hover {
-  color: var(--seventhColor);
+  color: var(--thirdColor);
 }
 
 .contacto-redes a svg {
@@ -506,7 +513,7 @@ textarea {
 
 .contacto-form button {
   align-self: flex-start;
-  background-color: var(--thirdColor);
+  background-color: var(--fourthColor);
   color: var(--fifthColor);
   border: none;
   border-radius: 8px;
@@ -518,7 +525,7 @@ textarea {
 }
 
 .contacto-form button:hover {
-  background-color: var(--fourthColor);
+  background-color: var(--thirdColor);
   box-shadow: 0 0 12px var(--shadow-purple);
 }
 
@@ -594,7 +601,7 @@ footer {
 }
 
 .footer-col ul li a:hover {
-  color: var(--seventhColor);
+  color: var(--thirdColor);
 }
 
 ul, ol {
